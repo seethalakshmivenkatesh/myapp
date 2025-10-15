@@ -11,10 +11,22 @@ import { ProfileComponent } from './customcomponent/profile';
   styleUrl: './app.css',
 })
 export class App {
-  name = 'seetha';
+  name: string = 'seetha';
   data = 10;
   data2 = 20;
   handleClick() {
-    alert('button clicked');
+    console.log('button clicked');
+    this.otherFunction();
+  }
+  otherFunction() {
+    console.log('otherfunction called');
+  }
+
+  fn() {
+    this.name = 'abc';
+  }
+
+  sum(a: number, b: number) {
+    console.log(a + b);
   }
 }
