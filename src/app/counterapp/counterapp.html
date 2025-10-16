@@ -1,0 +1,25 @@
+<p>counterapp works!</p>
+<div class="items-center flex flex-col">
+  <h1>counterapp</h1>
+  <p>{{ count }}</p>
+  <div class="flex gap-6 m-10">
+    <button
+      (click)="handleCounter('plus')"
+      class="border rounded-xl p-2 bg-blue-500 text-white cursor-pointer"
+    >
+      increment
+    </button>
+    <button
+      (click)="handleCounter('reset')"
+      class="border rounded-xl p-2 bg-blue-500 text-white cursor-pointer"
+    >
+      reset
+    </button>
+    <button
+      (click)="handleCounter('minus')"
+      class="border rounded-xl p-2 bg-blue-500 text-white cursor-pointer"
+    >
+      decrement
+    </button>
+  </div>
+</div>
