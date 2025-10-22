@@ -3,11 +3,12 @@ import { Component, signal } from '@angular/core';
 // import { Mycomponent } from './mycomponent/mycomponent';
 // import { Secondcomponent } from './secondcomponent/secondcomponent';
 // import { ProfileComponent } from './customcomponent/profile';
-import { Counterapp } from './counterapp/counterapp';
-
+// import { Counterapp } from './counterapp/counterapp';
+import { Inputcomponent } from './inputcomponent/inputcomponent';
+import { Conditionalcomponent } from './conditionalcomponent/conditionalcomponent';
 @Component({
   selector: 'app-root',
-  imports: [Counterapp],
+  imports: [Inputcomponent, Conditionalcomponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

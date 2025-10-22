@@ -1,0 +1,21 @@
+<p>conditionalcomponent works!</p>
+<div>
+  <button (click)="show()" class="bg-red-200 rounded-xl w-30 h-10">
+    {{ display ? 'hide' : 'show' }}
+  </button>
+</div>
+
+@if(display){
+<div class="bg-green-700 border w-20 h-20"></div>
+}
+<hr />
+<div>
+  <button (click)="DivDisplay()" class="bg-red-200 rounded-xl w-30 h-10">
+    {{ displayDiv ? 'show Yellow' : 'show Red' }}
+  </button>
+  @if(displayDiv){
+  <div class="bg-red-500 border w-20 h-20"></div>
+  } @else{
+  <div class="bg-yellow-300 border w-20 h-20"></div>
+  }
+</div>
