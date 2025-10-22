@@ -1,0 +1,19 @@
+<p>inputcomponent works!</p>
+<div class="flex flex-col mt-10 items-center gap-5">
+  <h1>set and get input value</h1>
+  <h1>{{ username }}</h1>
+  <input
+    type="text"
+    placeholder="enter username"
+    class="border border-black w-50 h-10"
+    (input)="getUserName($event)"
+    #userNameField
+  />
+  <button class="w-30 h-10 bg-blue-400 text-white border cursor-pointer">set input</button>
+  <button
+    (click)="getUserNameWithTemplate(userNameField.value)"
+    class="w-30 h-10 bg-blue-400 text-white border cursor-pointer"
+  >
+    get input
+  </button>
+</div>
